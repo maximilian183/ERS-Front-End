@@ -40,6 +40,7 @@ class DispatchDetails extends React.Component{
     return (
       <div>
         <ul>
+<<<<<<< 676bcef4e650b70e42e85e4ea6a41a657e05cff3
           <li>{current_dispatch_apparatus_id_array}</li>
           <li>{current_dispatch_crossstreets}</li>
           <li>{current_dispatch_description}</li>
@@ -48,7 +49,23 @@ class DispatchDetails extends React.Component{
           <li>{current_dispatch_physical_map_ref}</li>
           <li>{current_dispatch_radiofreq}</li>
           <li>{current_dispatch_address}</li>
+=======
+          <li>Description</li>
+          <li>{current_dispatch_description}</li>
+          <li>Address</li>
+          <li>{current_dispatch_address}</li>
+          <li>Vehicles On Site</li>
+          <li>{current_dispatch_apparatus_id_array}</li>
+          <li>Nearest Cross Street</li>
+          <li>{current_dispatch_nearest_xstreets}</li>
+          <li>Radio Channel</li>
+          <li>{current_dispatch_radio_channel}</li>
+          <li>Physical Map Reference</li>
+          <li>{current_dispatch_physical_map_ref}</li>
+          <li>Dispatch Timestamp</li>
+>>>>>>> added scss compiling and basic styles to existing components
           <li>{current_dispatch_time_stamp}</li>
+          <li>Misc. Details</li>
           <li>{current_dispatch_misc}</li>
         </ul>
       </div>
