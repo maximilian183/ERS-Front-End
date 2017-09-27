@@ -37,7 +37,7 @@
   },
   "scripts": {
 
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --port 8080 --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "scss": "node-sass --watch scss -o css"
