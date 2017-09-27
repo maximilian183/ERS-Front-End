@@ -14,7 +14,8 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^4.4.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "webpack-dev-server": "^2.7.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -31,11 +32,10 @@
     "react-addons-test-utils": "^15.6.0",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^2.7.0",
-    "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --port 8080 --open --config webpack.dev.js",
+    "start": "webpack-dev-server --port 9000 --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "Kevin Coyner, Nicholas Freeman, Masato Miura, Maximilian Kwok <max.kwok@gmail.com>",
