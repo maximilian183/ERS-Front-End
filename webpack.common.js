@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry:  [
             './src/components/App.jsx',
-            './src/components/Dispatch/DispatchDetails.jsx',
+            './src/components/ERS_DispatchDetails.jsx',
             './src/index.js'
           ],
   output: {
