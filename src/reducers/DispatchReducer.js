@@ -1,15 +1,18 @@
 export default function reducer( state = {
-  current_dispatch_crossstreets: null,
-  current_dispatch_description: null,
-  current_dispatch_district: null,
-  current_dispatch_id: null,
-  current_dispatch_physical_map_ref: null,
-  current_dispatch_radiofreq: null,
-  current_dispatch_address: null,
-  current_dispatch_apparatus_id_array: [],
-  current_dispatch_time_stamp: null,
-  current_dispatch_misc: null,
-  }, action ) {
+
+    current_dispatch_crossstreets: null,
+    current_dispatch_description: null,
+    current_dispatch_district: null,
+    current_dispatch_id: null,
+    current_dispatch_physical_map_ref: null,
+    current_dispatch_radiofreq: null,
+    current_dispatch_address: null,
+    current_dispatch_apparatus_id_array: [],
+    current_dispatch_time_stamp: null,
+    current_dispatch_misc: null,
+    error: null,
+
+}, action ) {
 
   switch (action.type) {
     case 'SET_CURRENT_DISPATCH': {
@@ -26,6 +29,10 @@ export default function reducer( state = {
         current_dispatch_misc: action.payload.misc,
       }
     }
+    case 'SET_CURRENT_DISPATCH_FAILED': {
+      return {...state, error: action.payload}
+    }
   }
+
   return state;
 }

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import dispatch from './DispatchReducer'
+import ERS_DispatchDetails from './DispatchReducer'
 
 export default combineReducers({
-  dispatch
+  ERS_DispatchDetails
 })
