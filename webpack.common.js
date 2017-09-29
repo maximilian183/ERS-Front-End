@@ -4,6 +4,7 @@ module.exports = {
   entry:  [
             './src/components/App.jsx',
             './src/components/ERS_DispatchDetails.jsx',
+            './src/components/Topic.jsx',
             './src/index.js'
           ],
   output: {
