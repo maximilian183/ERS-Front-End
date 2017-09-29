@@ -12,6 +12,7 @@
     "react-cookies": "^0.1.0",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^4.4.1",
@@ -36,10 +37,8 @@
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --port 8080 --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --port 8080 --host 0.0.0.0 --open --config webpack.dev.js",
     "scss": "node-sass --watch scss -o css"
   },
   "author": "Kevin Coyner, Nicholas Freeman, Masato Miura, Maximilian Kwok <max.kwok@gmail.com>",

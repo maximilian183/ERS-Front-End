@@ -28,7 +28,10 @@ class ERS_DispatchDetails extends React.Component{
 
   componentDidMount() {
 
-    this.props.dispatch(getERS_DispatchDetails())
+    var urlParams = this.props.location.search;
+    var id = urlParams.replace('?id=', '');
+
+    this.props.dispatch(getERS_DispatchDetails(id))
 
   }
 
@@ -61,4 +64,5 @@ class ERS_DispatchDetails extends React.Component{
   }
 }
 
+export default ERS_DispatchDetails;
 window.ERS_DispatchDetails = ERS_DispatchDetails;
